@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mohit.rnr.IPActivity"
+    tools:showIn="@layout/activity_ip"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current IP Address"
+        android:textSize="30sp"
+        android:layout_marginTop="50px"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/ip"
+        android:gravity="center"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:hint="192.168.0.1"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200px"
+        android:text="Chnage IP"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:onClick="changeIP"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
